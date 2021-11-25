@@ -49,7 +49,7 @@ class PersonRepositoryTest {
 	@Test	
 	public void getSortedJobs(){
 		List<String> sortedJobs = personRepository.getSortedJobs();
-		sortedJobs.forEach(System.out::println); 
+		sortedJobs.forEach(System.out::println);
 
 		assertThat(sortedJobs).isSortedAccordingTo(Comparator.naturalOrder())
 		.contains("Pole Dancer", "Bartender", "Developer", "Personal Trainer", "Soldier", "Teacher", "Taxi Driver", "Nurse", "Musician");
