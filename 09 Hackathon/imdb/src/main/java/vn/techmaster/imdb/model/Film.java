@@ -18,5 +18,4 @@ public class Film {
     private List<String> generes;
     private int cost;
     private int revenue;
-    
 }
